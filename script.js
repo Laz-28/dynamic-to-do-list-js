@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (taskText === "") {
       alert("Please enter a task.");
       return;
-    }
+    } else{
 
     // ...existing code...
     // Task Creation
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Clear the input field
     taskInput.value = "";
-// ...existing code...
+}
   }
 
   // Attach Event Listeners
