@@ -16,9 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
+    // ...existing code...
     // Task Creation
     const li = document.createElement('li'); 
-    li.textContent = taskText; 
+    li.appendChild(document.createTextNode(taskText)); // Correct way
 
     // Create a Remove button
     const removeBtn = document.createElement('button');
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Clear the input field
     taskInput.value = "";
+// ...existing code...
   }
 
   // Attach Event Listeners
